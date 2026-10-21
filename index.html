@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f7"><meta name="description" content="A thoughtfully simple college portal for students and faculty.">
+  <title>Campus — Your academic world, together.</title>
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-symbol">c.</span> campus<span class="brand-dot">®</span></a>
+    <div class="workspace"><span class="college-icon">▥</span><div>Northfield Institute<small>School of Engineering</small></div></div>
+    <p class="nav-label">WORKSPACE</p>
+    <nav aria-label="Main navigation">
+      <a href="#overview" data-page="overview"><span>◫</span> Overview</a>
+      <a href="#attendance" data-page="attendance"><span>◷</span> Attendance</a>
+      <a href="#marks" data-page="marks"><span>▥</span> Marks & results</a>
+      <a href="#notices" data-page="notices"><span>▤</span> Notice board <b id="notice-count"></b></a>
+      <a href="#schedule" data-page="schedule"><span>▦</span> Timetable</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="semester-card"><span class="live-dot"></span> Semester in progress<strong>Build your next chapter.</strong><p>Small steps. Remarkable progress.</p></div><button class="profile" id="profile-button"><span class="avatar">SK</span><span id="profile-name">Shivam Kumar<small>Student · CSE 2025–29</small></span><span>⌄</span></button></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><span class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Overview</strong></span><div class="top-actions"><span class="demo-pill">LOCAL DEMO</span><label class="role-control">View as <select id="role" aria-label="Choose demo role"><option value="student">Student</option><option value="faculty">Faculty</option></select></label><button id="theme" class="icon-button" aria-label="Toggle dark mode">◐</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>campus. <span>A little clarity for your college day.</span><span>Frontend demo · Changes saved on this browser</span></footer>
+  </div>
+  <dialog id="modal"><form id="editor"><div class="dialog-heading"><div><p class="eyebrow">CAMPUS WORKSPACE</p><h2 id="modal-title"></h2></div><button type="button" class="icon-button" id="close-modal" aria-label="Close dialog">×</button></div><div id="modal-fields"></div><div class="dialog-actions"><button type="button" class="button secondary" id="cancel-modal">Cancel</button><button class="button" type="submit">Save changes</button></div></form></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
